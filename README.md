@@ -107,7 +107,6 @@ automatically.
   `/listDeposits`              Displays recent QBO Deposit records.
 
   `/listTransfers`             Displays recent QBO Transfer records.
-  -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
