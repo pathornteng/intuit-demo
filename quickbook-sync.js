@@ -98,27 +98,49 @@ function getCompanyRealmIdOrThrow() {
     return token.realmId; // ALWAYS use token realmId for API calls
 }
 
-// -------------------- ROUTES --------------------
 app.get("/", (req, res) => {
-    res.json({
-        status: "ok",
-        authorizeUrl: oauthClient.authorizeUri({
-            scope: [OAuthClient.scopes.Accounting, OAuthClient.scopes.OpenId],
-            state: "testState",
-        }),
-        endpoints: {
-            callback: "/callback",
-            getCompanyInfo: "/getCompanyInfo",
-            syncHederaToQbo: "/syncHederaToQbo?account=0.0.6856591",
-            listTransfers: "/listTransfers",
-            listDeposits: "/listDeposits",
-            listAccounts: "/listAccounts",
-            debugRealm: "/debugRealm",
-        },
-        mirror: MIRROR_BASE,
-        trackedHederaAccounts: TRACKED_HEDERA_ACCOUNTS,
+    const authorizeUrl = oauthClient.authorizeUri({
+        scope: [OAuthClient.scopes.Accounting, OAuthClient.scopes.OpenId],
+        state: "testState",
     });
+
+    res.send(`
+        <html>
+        <head>
+            <title>Hedera → QuickBooks Sync</title>
+            <style>
+                body { font-family: Arial, sans-serif; padding: 30px; background:#f7f7f7; }
+                h1 { color:#333; }
+                a { display:block; margin:8px 0; color:#0066cc; text-decoration:none; }
+                .box { background:white; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+                code { background:#eee; padding:2px 6px; border-radius:4px; }
+            </style>
+        </head>
+        <body>
+            <div class="box">
+                <h1>Hedera → QuickBooks Sync Server</h1>
+
+                <h3>Authorization</h3>
+                <a href="${authorizeUrl}">🔑 Connect / Reconnect QuickBooks</a>
+
+                <h3>API Endpoints</h3>
+                <a href="/getCompanyInfo">🏢 Get Company Info</a>
+                <a href="/syncHederaToQbo?account=0.0.6856591">🔄 Sync Hedera → QBO</a>
+                <a href="/listAccounts">📒 List Accounts</a>
+                <a href="/listDeposits">💰 List Deposits</a>
+                <a href="/listTransfers">🔁 List Transfers</a>
+                <a href="/debugRealm">🧪 Debug Realm</a>
+
+                <h3>Config</h3>
+                <div>Mirror Node: <code>${MIRROR_BASE}</code></div>
+                <div>Tracked Hedera Accounts:</div>
+                <code>${TRACKED_HEDERA_ACCOUNTS.join(", ")}</code>
+            </div>
+        </body>
+        </html>
+    `);
 });
+
 
 app.get("/callback", async (req, res) => {
     try {
@@ -200,14 +222,64 @@ app.get("/getCompanyInfo", async (req, res) => {
     try {
         const companyRealmId = getCompanyRealmIdOrThrow();
         const url = `${QB_BASE_URL}v3/company/${companyRealmId}/companyinfo/${companyRealmId}?minorversion=75`;
+
         const apiResponse = await oauthClient.makeApiCall({ url });
-        const body = typeof apiResponse.body === "string" ? JSON.parse(apiResponse.body) : apiResponse.body;
-        res.json(body);
+        const body = typeof apiResponse.body === "string"
+            ? JSON.parse(apiResponse.body)
+            : apiResponse.body;
+
+        const c = body.CompanyInfo;
+
+        res.send(`
+            <html>
+            <head>
+                <title>QuickBooks Company Info</title>
+                <style>
+                    body { font-family: Arial, sans-serif; padding:30px; background:#f7f7f7; }
+                    .box { background:white; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+                    h1 { margin-top:0; }
+                    .row { margin:6px 0; }
+                    code { background:#eee; padding:2px 6px; border-radius:4px; }
+                    pre { background:#eee; padding:15px; border-radius:6px; overflow:auto; }
+                    a { color:#0066cc; text-decoration:none; }
+                </style>
+            </head>
+            <body>
+                <div class="box">
+                    <h1>🏢 QuickBooks Company Info</h1>
+
+                    <div class="row"><b>Company Name:</b> ${c.CompanyName}</div>
+                    <div class="row"><b>Legal Name:</b> ${c.LegalName || "-"}</div>
+                    <div class="row"><b>Realm ID:</b> <code>${companyRealmId}</code></div>
+                    <div class="row"><b>Email:</b> ${c.Email?.Address || "-"}</div>
+                    <div class="row"><b>Phone:</b> ${c.PrimaryPhone?.FreeFormNumber || "-"}</div>
+                    <div class="row"><b>Country:</b> ${c.Country || "-"}</div>
+                    <div class="row"><b>Created:</b> ${c.MetaData?.CreateTime || "-"}</div>
+                    <div class="row"><b>Last Updated:</b> ${c.MetaData?.LastUpdatedTime || "-"}</div>
+
+                    <br/>
+                    <details>
+                        <summary>📄 View Full Raw JSON</summary>
+                        <pre>${JSON.stringify(body, null, 2)}</pre>
+                    </details>
+
+                    <br/>
+                    <a href="/">⬅ Back to dashboard</a>
+                </div>
+            </body>
+            </html>
+        `);
+
     } catch (e) {
         console.error("CompanyInfo error:", e);
-        res.status(500).json({ error: String(e) });
+        res.status(500).send(`
+            <h2>❌ Failed to load Company Info</h2>
+            <pre>${e.message}</pre>
+            <a href="/">⬅ Back</a>
+        `);
     }
 });
+
 
 // -------------------- QBO HELPERS --------------------
 async function qboQuery(companyRealmId, query) {

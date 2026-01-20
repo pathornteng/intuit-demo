@@ -1,0 +1,5117 @@
+2026-01-20 12:02:03.887 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 12:02:20.929 +07:00 info: {"timestamp":"2026-01-20T05:02:20.928Z","level":"info","message":"Token exchange request:","environment":"sandbox","clientId":"AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa","data":{"grant_type":"authorization_code","code_length":50,"redirect_uri":"http://localhost:3000/callback","has_code":true,"realmId":"9341456167431462","state":"testState"}}
+2026-01-20 12:02:22.191 +07:00 info: Create Token response is : {"id_token":"eyJraWQiOiJPUElDUFJEMDUxMDIwMjMiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOlsiQUI3Y1FZdE5VSnMwMkhxU1ZhM0h0ZU5JRThxbTMzNHowRWhkYzRaVkhLWGxSN2d5WGEiXSwic3ViIjoiNTVmYmQ3ZTMtNTRkNi0zNDlkLWE3MTAtM2VhZjQ5Y2M3ZmZmIiwicmVhbG1pZCI6IjkzNDE0NTYxNjc0MzE0NjIiLCJhdXRoX3RpbWUiOjE3Njg4ODUzMzksImlzcyI6Imh0dHBzOi8vb2F1dGgucGxhdGZvcm0uaW50dWl0LmNvbS9vcC92MSIsImV4cCI6MTc2ODg4ODk0MiwiaWF0IjoxNzY4ODg1MzQyfQ.OkcBmLCC75L3P0n28GdSCIFxrEpw5KShJ2GRv8OOhHaVNgQmt3d3B4SvgXRDtyAJZvehMMRd0QU0boxCmNN0FuwBwteVFwsSuqzTtAMDKaTt3s6dz5V6FG89_W9OusFfzOVL2QTgV9T7QO8FBrbQ0SRzkim-SVdGy2aarE25XYdlmetEpbZaPReGr9sInxgHN3xMLXiS6U-BmRVvaP3u9RfrXiJ6l03RljEr-ec5uvWFUJcx-wFbOMR5YQBYEBHYA97xmiFQMCwq_s2Qclm7jitycb2wBZKLbiClemnkc2B6S313Rzaw1zc1PhwQygB1LJ5BsOHjYaPsdx3iNIUflA","expires_in":3600,"x_refresh_token_expires_in":8726400,"refresh_token":"RT1-47-H0-17776117425drlhr490yh1rwyiq79z","access_token":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwieC5vcmciOiJIMCJ9..LMInBcZbhhUDc-1flAinLg.wUxMDiRV3wtVrc1MFnCYKBzYLqD5f-AFYpI0JeSPv0FDQLkJCIUNemtODxGFWOTktOtfSpytM36akOIgtssT06fc9GoQ1uAe0sYfo0zihsl9eTwNofkK8T1HI2tWuogqGXbRLMuQNqiXnfDPaeBdzqK0J4Jnwy-5GXGJgn1X_98GpAr0oMwTSd9ikC10tEaNv8uxiLmTwcg6STM5VmAXy8OxY_TINZJvaR3NUhLNrqAaKhKso8gx-bDQ3IQPtp5nNAntb_sBIEgz3Hu1sUUGECLpHUyJ7p789YD5h53Rud_wzZ6B1xyDHsCFqDSRW2Ysy8DLDF-fLGkj2fNeElH4NpgSERi4qSDSULfoqX6jQsDowrZi-rnRITKAycLpa2E0bfF8FwHpWGsIB-YgW9BAVnwDJMyWUDzuR1__2KRiZzJ9GKKVGwk8uFJPXje_N8Zh0toLdCfuQrmtyuveZtqWgMzuXnb12IOBPYlErMWl9wnzsS8ZWfH2WQ2WjyiYMEfhnTbZbmN1n6LYtqzaHmyVYGe6QVJfINVsBPk5qWkNP9NfWf9T6tGSDJgY_mrG4mrOmLRuz6ZB0YzhvA57wsiGWw.mT_ViT8OEya03radnUkoYQ","token_type":"bearer"}
+2026-01-20 12:02:25.528 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "Hedera 0.0.6856591",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera 0.0.6856591",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 110.64,
+        "CurrentBalanceWithSubAccounts": 110.64,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040011",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:59-08:00",
+          "LastUpdatedTime": "2026-01-19T19:43:50-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T21:02:25.508-08:00"
+}
+2026-01-20 12:02:25.904 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "Hedera Clearing",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera Clearing",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "OtherPrimaryIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040012",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:00-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:00-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T21:02:25.884-08:00"
+}
+2026-01-20 12:02:26.280 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "External Hedera Outflow",
+        "SubAccount": false,
+        "FullyQualifiedName": "External Hedera Outflow",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 171.36,
+        "CurrentBalanceWithSubAccounts": 171.36,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040013",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:01-08:00",
+          "LastUpdatedTime": "2026-01-19T19:43:50-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T21:02:26.263-08:00"
+}
+2026-01-20 12:02:27.068 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "430",
+        "PrivateNote": "hedera:0.0.6856591-1768880610-428559609:1768880618.141609000"
+      },
+      {
+        "sparse": true,
+        "Id": "429",
+        "PrivateNote": "hedera:0.0.6856591-1768879780-200464265:1768879785.269687018"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T21:02:26.930-08:00"
+}
+2026-01-20 12:02:27.455 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "430",
+        "PrivateNote": "hedera:0.0.6856591-1768880610-428559609:1768880618.141609000"
+      },
+      {
+        "sparse": true,
+        "Id": "429",
+        "PrivateNote": "hedera:0.0.6856591-1768879780-200464265:1768879785.269687018"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T21:02:27.365-08:00"
+}
+2026-01-20 12:02:27.902 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T21:02:27.753-08:00"
+}
+2026-01-20 12:02:28.285 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T21:02:28.199-08:00"
+}
+2026-01-20 12:02:28.671 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T21:02:28.585-08:00"
+}
+2026-01-20 12:02:29.109 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "411",
+        "PrivateNote": "hedera:0.0.7314364-1768812899-775720298:1768812905.039349310"
+      },
+      {
+        "sparse": true,
+        "Id": "410",
+        "PrivateNote": "hedera:0.0.7314364-1768812965-674617321:1768812973.281324000"
+      },
+      {
+        "sparse": true,
+        "Id": "407",
+        "PrivateNote": "hedera:0.0.7314364-1768815391-452727899:1768815397.646105545"
+      },
+      {
+        "sparse": true,
+        "Id": "406",
+        "PrivateNote": "hedera:0.0.7314364-1768815721-351082460:1768815727.457953742"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 4,
+    "totalCount": 4
+  },
+  "time": "2026-01-19T21:02:28.970-08:00"
+}
+2026-01-20 12:02:29.552 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "411",
+        "PrivateNote": "hedera:0.0.7314364-1768812899-775720298:1768812905.039349310"
+      },
+      {
+        "sparse": true,
+        "Id": "410",
+        "PrivateNote": "hedera:0.0.7314364-1768812965-674617321:1768812973.281324000"
+      },
+      {
+        "sparse": true,
+        "Id": "407",
+        "PrivateNote": "hedera:0.0.7314364-1768815391-452727899:1768815397.646105545"
+      },
+      {
+        "sparse": true,
+        "Id": "406",
+        "PrivateNote": "hedera:0.0.7314364-1768815721-351082460:1768815727.457953742"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 4,
+    "totalCount": 4
+  },
+  "time": "2026-01-19T21:02:29.413-08:00"
+}
+2026-01-20 12:02:29.949 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T21:02:29.860-08:00"
+}
+2026-01-20 12:02:30.337 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T21:02:30.254-08:00"
+}
+2026-01-20 12:02:30.785 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "411",
+        "PrivateNote": "hedera:0.0.7314364-1768812899-775720298:1768812905.039349310"
+      },
+      {
+        "sparse": true,
+        "Id": "410",
+        "PrivateNote": "hedera:0.0.7314364-1768812965-674617321:1768812973.281324000"
+      },
+      {
+        "sparse": true,
+        "Id": "407",
+        "PrivateNote": "hedera:0.0.7314364-1768815391-452727899:1768815397.646105545"
+      },
+      {
+        "sparse": true,
+        "Id": "406",
+        "PrivateNote": "hedera:0.0.7314364-1768815721-351082460:1768815727.457953742"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 4,
+    "totalCount": 4
+  },
+  "time": "2026-01-19T21:02:30.643-08:00"
+}
+2026-01-20 12:02:31.201 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "411",
+        "PrivateNote": "hedera:0.0.7314364-1768812899-775720298:1768812905.039349310"
+      },
+      {
+        "sparse": true,
+        "Id": "410",
+        "PrivateNote": "hedera:0.0.7314364-1768812965-674617321:1768812973.281324000"
+      },
+      {
+        "sparse": true,
+        "Id": "407",
+        "PrivateNote": "hedera:0.0.7314364-1768815391-452727899:1768815397.646105545"
+      },
+      {
+        "sparse": true,
+        "Id": "406",
+        "PrivateNote": "hedera:0.0.7314364-1768815721-351082460:1768815727.457953742"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 4,
+    "totalCount": 4
+  },
+  "time": "2026-01-19T21:02:31.075-08:00"
+}
+2026-01-20 12:02:31.725 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T21:02:31.506-08:00"
+}
+2026-01-20 12:02:32.228 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T21:02:32.020-08:00"
+}
+2026-01-20 12:02:32.734 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T21:02:32.521-08:00"
+}
+2026-01-20 12:02:33.268 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T21:02:33.033-08:00"
+}
+2026-01-20 12:02:33.768 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T21:02:33.561-08:00"
+}
+2026-01-20 12:02:34.261 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T21:02:34.056-08:00"
+}
+2026-01-20 12:02:34.774 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T21:02:34.561-08:00"
+}
+2026-01-20 12:02:35.371 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T21:02:35.092-08:00"
+}
+2026-01-20 12:02:35.752 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "421",
+        "PrivateNote": "hedera:0.0.7314364-1765965048-616389444:1765965055.914312545"
+      },
+      {
+        "sparse": true,
+        "Id": "420",
+        "PrivateNote": "hedera:0.0.7314364-1765965104-847447479:1765965109.005434934"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T21:02:35.657-08:00"
+}
+2026-01-20 12:02:36.148 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "421",
+        "PrivateNote": "hedera:0.0.7314364-1765965048-616389444:1765965055.914312545"
+      },
+      {
+        "sparse": true,
+        "Id": "420",
+        "PrivateNote": "hedera:0.0.7314364-1765965104-847447479:1765965109.005434934"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T21:02:36.044-08:00"
+}
+2026-01-20 12:02:36.514 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 100,
+        "sparse": true,
+        "Id": "422",
+        "PrivateNote": "hedera:0.0.2158778-1765964901-673268716:1765964912.365292230",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1,
+    "totalCount": 1
+  },
+  "time": "2026-01-19T21:02:36.439-08:00"
+}
+2026-01-20 12:02:36.883 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "423",
+        "PrivateNote": "hedera:0.0.7314364-1765355365-996728307:1765355370.495038000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1,
+    "totalCount": 1
+  },
+  "time": "2026-01-19T21:02:36.813-08:00"
+}
+2026-01-20 12:02:37.275 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "425",
+        "PrivateNote": "hedera:0.0.7314364-1764659040-142583583:1764659044.571825000"
+      },
+      {
+        "sparse": true,
+        "Id": "424",
+        "PrivateNote": "hedera:0.0.7314364-1764670148-357414116:1764670153.002187177"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T21:02:37.178-08:00"
+}
+2026-01-20 12:02:37.667 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "425",
+        "PrivateNote": "hedera:0.0.7314364-1764659040-142583583:1764659044.571825000"
+      },
+      {
+        "sparse": true,
+        "Id": "424",
+        "PrivateNote": "hedera:0.0.7314364-1764670148-357414116:1764670153.002187177"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T21:02:37.568-08:00"
+}
+2026-01-20 12:03:19.708 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "Hedera 0.0.6856591",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera 0.0.6856591",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 110.64,
+        "CurrentBalanceWithSubAccounts": 110.64,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040011",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:59-08:00",
+          "LastUpdatedTime": "2026-01-19T19:43:50-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T21:03:19.688-08:00"
+}
+2026-01-20 12:03:20.096 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "Hedera Clearing",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera Clearing",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "OtherPrimaryIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040012",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:00-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:00-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T21:03:20.075-08:00"
+}
+2026-01-20 12:03:20.433 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "External Hedera Outflow",
+        "SubAccount": false,
+        "FullyQualifiedName": "External Hedera Outflow",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 171.36,
+        "CurrentBalanceWithSubAccounts": 171.36,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040013",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:01-08:00",
+          "LastUpdatedTime": "2026-01-19T19:43:50-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T21:03:20.412-08:00"
+}
+2026-01-20 12:03:21.174 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {},
+  "time": "2026-01-19T21:03:21.112-08:00"
+}
+2026-01-20 12:03:21.792 +07:00 info: The makeAPICall () response is : {
+  "Deposit": {
+    "DepositToAccountRef": {
+      "value": "1150040011",
+      "name": "Hedera 0.0.6856591"
+    },
+    "TotalAmt": 22,
+    "domain": "QBO",
+    "sparse": false,
+    "Id": "431",
+    "SyncToken": "0",
+    "MetaData": {
+      "CreateTime": "2026-01-19T21:03:22-08:00",
+      "LastUpdatedTime": "2026-01-19T21:03:22-08:00"
+    },
+    "TxnDate": "2026-01-20",
+    "CurrencyRef": {
+      "value": "USD",
+      "name": "United States Dollar"
+    },
+    "PrivateNote": "hedera:0.0.2158778-1768885380-675279432:1768885392.983378000",
+    "Line": [
+      {
+        "Id": "1",
+        "LineNum": 1,
+        "Amount": 22,
+        "DetailType": "DepositLineDetail",
+        "DepositLineDetail": {
+          "AccountRef": {
+            "value": "1150040012",
+            "name": "Hedera Clearing"
+          }
+        },
+        "CustomExtensions": []
+      }
+    ]
+  },
+  "time": "2026-01-19T21:03:21.499-08:00"
+}
+2026-01-20 12:03:38.733 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "Hedera 0.0.6856591",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera 0.0.6856591",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 132.64,
+        "CurrentBalanceWithSubAccounts": 132.64,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040011",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:59-08:00",
+          "LastUpdatedTime": "2026-01-19T21:03:22-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T21:03:38.702-08:00"
+}
+2026-01-20 12:03:39.111 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "Hedera Clearing",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera Clearing",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "OtherPrimaryIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040012",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:00-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:00-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T21:03:39.079-08:00"
+}
+2026-01-20 12:03:39.483 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "External Hedera Outflow",
+        "SubAccount": false,
+        "FullyQualifiedName": "External Hedera Outflow",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 171.36,
+        "CurrentBalanceWithSubAccounts": 171.36,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040013",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:01-08:00",
+          "LastUpdatedTime": "2026-01-19T19:43:50-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T21:03:39.452-08:00"
+}
+2026-01-20 14:10:35.467 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893035442,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:35.711 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893035686,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:37.162 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893037139,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:37.398 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893037375,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:37.663 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893037637,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:37.904 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893037877,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:37.941 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893037913,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:38.110 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893038081,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:38.164 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893038135,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:38.339 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893038309,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:10:54.771 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:10:55.580 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:10:55.748 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:10:55.912 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:11:04.690 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893064650,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:11:04.908 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token expired",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893064883,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:11:20.396 +07:00 info: {"timestamp":"2026-01-20T07:11:20.396Z","level":"info","message":"Token exchange request:","environment":"sandbox","clientId":"AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa","data":{"grant_type":"authorization_code","code_length":50,"redirect_uri":"http://localhost:3000/callback","has_code":true,"realmId":"9341456167431462","state":"testState"}}
+2026-01-20 14:11:21.512 +07:00 info: Create Token response is : {"id_token":"eyJraWQiOiJPUElDUFJEMDUxMDIwMjMiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOlsiQUI3Y1FZdE5VSnMwMkhxU1ZhM0h0ZU5JRThxbTMzNHowRWhkYzRaVkhLWGxSN2d5WGEiXSwic3ViIjoiNTVmYmQ3ZTMtNTRkNi0zNDlkLWE3MTAtM2VhZjQ5Y2M3ZmZmIiwicmVhbG1pZCI6IjkzNDE0NTYxNjc0MzE0NjIiLCJhdXRoX3RpbWUiOjE3Njg4OTMwNzgsImlzcyI6Imh0dHBzOi8vb2F1dGgucGxhdGZvcm0uaW50dWl0LmNvbS9vcC92MSIsImV4cCI6MTc2ODg5NjY4MSwiaWF0IjoxNzY4ODkzMDgxfQ.kGVGVX7VsWvT5ZMBhkTz6IpNZ8rEKjMHEjaF7jIrcOv4i_hSIhkErWw5GGixkbra0OrHoPxA6Jha6JBRyeMM0MyuL0b1Nu7GtJERO_jMnfntPQVuLHTM81w4rj3vVKG_oXFZAI9-1DKcWJzEWcBTyKppUx2AJZZOtbM90lV_EI1dvWQopEOU2cBHN2fjqm0a3XoHGFXpgDYOxDX5tmPcr8KsY6lfnPsAAuECtoDro7bHEVW3tiGXlTBLDv9phM3EVWfMSRDP1ZqwQVMTPN4kY6PZ5ABJvCgf4KI3mcPFuDUYhHYCl13LxAuZhBCYtZ5F-O_YPo4Arc6aqPKjuKS2Mg","token_type":"bearer","x_refresh_token_expires_in":8726400,"refresh_token":"RT1-232-H0-1777619481l50o3c75o0uxhyde9v55","access_token":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwieC5vcmciOiJIMCJ9..PRpiScAdX-vUFc0tSkLpkg.nd99t9wiJaWk4gPqk8R7en8strEICzG07PcPaivhEzboys9M315jEJKtBiq7ZINJf6JwUAARU68O_ROuDDuQkFjSTBM8WvESe9u65-3l7R-DTpmu72nGUV27HDuVwsBRAX3pJCa5kKKf-bwQwkHhJvBWKcCXWCi688Jf8-HuSBN9wn_I16iLwkwCNYj-nP98-wbuZHxizqu7MYsdzR3Ynin1loZAQb46G9Vn2PQHdVg3vGUM32oSc_HU_byyjfDIYMzAn2OOGrTxAWev2vz7fh1xlsIla7ypYDeA7siiYA7biFcM4Lwq9jgcGQiXq2f5oxBpOVPSgREhqS3dnw2YoNRxBdSs8plfT8guzJY8OeXg89wTgFif7YctdogPgX_FH9KDgxTWLlmOyQ8vCdcAV8qwI-lh5akwy0Doko0qBwtt7-lkXZ-8sxRs94rS6afQoUujOGXuLrjxtZw3SRWUbDgQoIj89fxE-g2czsIege3tc1RIwklmwDKPyoOoDeon6vsb3DeebKsiOjTTconCuBvZjzrWEjvNyelktiZizC4y39FTE7P0CuqvoFZT_0MHxa4oagrCQzP6nj_YGz7p5A.VdY0CwNgruzVz9-pm8bxQg","expires_in":3600}
+2026-01-20 14:11:27.907 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:11:28.714 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:11:28.883 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:11:29.048 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:11:29.184 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:12:45.950 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:12:50.459 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:12:51.439 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:12:51.594 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:12:54.927 +07:00 info: {"timestamp":"2026-01-20T07:12:54.927Z","level":"info","message":"Token exchange request:","environment":"sandbox","clientId":"AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa","data":{"grant_type":"authorization_code","code_length":50,"redirect_uri":"http://localhost:3000/callback","has_code":true,"realmId":"9341456167431462","state":"testState"}}
+2026-01-20 14:12:56.283 +07:00 info: Create Token response is : {"x_refresh_token_expires_in":8726400,"id_token":"eyJraWQiOiJPUElDUFJEMDUxMDIwMjMiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOlsiQUI3Y1FZdE5VSnMwMkhxU1ZhM0h0ZU5JRThxbTMzNHowRWhkYzRaVkhLWGxSN2d5WGEiXSwic3ViIjoiNTVmYmQ3ZTMtNTRkNi0zNDlkLWE3MTAtM2VhZjQ5Y2M3ZmZmIiwicmVhbG1pZCI6IjkzNDE0NTYxNjc0MzE0NjIiLCJhdXRoX3RpbWUiOjE3Njg4OTMxNzQsImlzcyI6Imh0dHBzOi8vb2F1dGgucGxhdGZvcm0uaW50dWl0LmNvbS9vcC92MSIsImV4cCI6MTc2ODg5Njc3NiwiaWF0IjoxNzY4ODkzMTc2fQ.f4_BgWRcxEFNN1rZDTZ_Vmmn0LRgQ1Fo11pYgw-WO7a1Ibue4AvA7Su4YyewQHLn88Vg_YFRghYiHOfPZwGKwcDeQkNbcIVKO9DbKnbovV4dCnEY91-wl49KXB4nat3LOgqDpVVQJe16uFjOd4e-ZAFIpGy0338miP5ziH-ZJiMs4EdEJBoQuE8dXzrUYoDbnlMz3RqUDi5y628tdznJhoOAxosRVIWT5GciYsiZ6Lz-95xMqVKspwJWZSPqK2EGexZtV_NRv_qpPl2NGupu1Bbe9ORDDESGI8kTZOKobSiVSXGvRt1ynbaAk4v4KOzGnJkRdL65xViOCD4XZlye_g","refresh_token":"RT1-2-H0-1777619576wwqlrwo7wpp6ezq85eyo","access_token":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwieC5vcmciOiJIMCJ9..fxu8Q1aaHbLfqxiTMjKjtg.H1pFMc7XJMssSIgetfl4aOiXjRQrmdmwQr4gHbAIxD34PJTtroyKZekTtp14geSLGYWnUuR0T0LISN097jplezrvMvk0GblaXeNOzVIDb2Sau8S8JgPGRFf-KWbuIXZ--MLRM6qSUqpjg1O6DHeDfYcgMlDXq_qWp_6nxSthv2vjCF7jLTmBHBFpZThh41s8tF3QgRw2CtJXWXcJh43GMkU3OgDVqlejks5sZMG6mhXBjBmnjRxG7oNWk_mpgTqhK4WULvVOjlHcbdbKx69MgEEXIkpkmve1wuBL2DNCjgt08FEV_gwsBsgkxxnoxQLpBg-6zenLC4vumI1RMFEP8reIuqjYs_x-DLfOw-BnsLhZWiRRdnKoyoO6FSvS3vL7Wgu1zIKlGtRYxBKnoO4kJR5hH0r9SznSU95ZLUoxIep57OizD7GSdFG4xJTRXtXyYpOVS8fCwccs91BKe2wBCfpytr-c08Et3dmdBtY0kmTOPLEN2dtl5KE0zrPfePiEQfAWqlv9ueNrmt_VbYzxNGPZxP77jtAcPBy0CUilE1efN7IoTgX77heZYBUkWOUo2osS7y78FLreBknxoOSdaA.eShWYYbR1wieO-BZf0-Aow","token_type":"bearer","expires_in":3600}
+2026-01-20 14:12:59.864 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "Hedera 0.0.6856591",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera 0.0.6856591",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 132.64,
+        "CurrentBalanceWithSubAccounts": 132.64,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040011",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:59-08:00",
+          "LastUpdatedTime": "2026-01-19T21:03:22-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T23:12:59.830-08:00"
+}
+2026-01-20 14:13:00.213 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "Hedera Clearing",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera Clearing",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "OtherPrimaryIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040012",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:00-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:00-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T23:13:00.185-08:00"
+}
+2026-01-20 14:13:00.561 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "External Hedera Outflow",
+        "SubAccount": false,
+        "FullyQualifiedName": "External Hedera Outflow",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 171.36,
+        "CurrentBalanceWithSubAccounts": 171.36,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040013",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:01-08:00",
+          "LastUpdatedTime": "2026-01-19T19:43:50-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1
+  },
+  "time": "2026-01-19T23:13:00.530-08:00"
+}
+2026-01-20 14:13:01.536 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 22,
+        "sparse": true,
+        "Id": "431",
+        "PrivateNote": "hedera:0.0.2158778-1768885380-675279432:1768885392.983378000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1,
+    "totalCount": 1
+  },
+  "time": "2026-01-19T23:13:01.388-08:00"
+}
+2026-01-20 14:13:02.013 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "430",
+        "PrivateNote": "hedera:0.0.6856591-1768880610-428559609:1768880618.141609000"
+      },
+      {
+        "sparse": true,
+        "Id": "429",
+        "PrivateNote": "hedera:0.0.6856591-1768879780-200464265:1768879785.269687018"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T23:13:01.808-08:00"
+}
+2026-01-20 14:13:02.372 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "430",
+        "PrivateNote": "hedera:0.0.6856591-1768880610-428559609:1768880618.141609000"
+      },
+      {
+        "sparse": true,
+        "Id": "429",
+        "PrivateNote": "hedera:0.0.6856591-1768879780-200464265:1768879785.269687018"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T23:13:02.268-08:00"
+}
+2026-01-20 14:13:02.739 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T23:13:02.625-08:00"
+}
+2026-01-20 14:13:03.082 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T23:13:02.993-08:00"
+}
+2026-01-20 14:13:03.445 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T23:13:03.337-08:00"
+}
+2026-01-20 14:13:03.837 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "411",
+        "PrivateNote": "hedera:0.0.7314364-1768812899-775720298:1768812905.039349310"
+      },
+      {
+        "sparse": true,
+        "Id": "410",
+        "PrivateNote": "hedera:0.0.7314364-1768812965-674617321:1768812973.281324000"
+      },
+      {
+        "sparse": true,
+        "Id": "407",
+        "PrivateNote": "hedera:0.0.7314364-1768815391-452727899:1768815397.646105545"
+      },
+      {
+        "sparse": true,
+        "Id": "406",
+        "PrivateNote": "hedera:0.0.7314364-1768815721-351082460:1768815727.457953742"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 4,
+    "totalCount": 4
+  },
+  "time": "2026-01-19T23:13:03.690-08:00"
+}
+2026-01-20 14:13:04.248 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "411",
+        "PrivateNote": "hedera:0.0.7314364-1768812899-775720298:1768812905.039349310"
+      },
+      {
+        "sparse": true,
+        "Id": "410",
+        "PrivateNote": "hedera:0.0.7314364-1768812965-674617321:1768812973.281324000"
+      },
+      {
+        "sparse": true,
+        "Id": "407",
+        "PrivateNote": "hedera:0.0.7314364-1768815391-452727899:1768815397.646105545"
+      },
+      {
+        "sparse": true,
+        "Id": "406",
+        "PrivateNote": "hedera:0.0.7314364-1768815721-351082460:1768815727.457953742"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 4,
+    "totalCount": 4
+  },
+  "time": "2026-01-19T23:13:04.092-08:00"
+}
+2026-01-20 14:13:04.598 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T23:13:04.501-08:00"
+}
+2026-01-20 14:13:04.966 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "sparse": true,
+        "Id": "428",
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "sparse": true,
+        "Id": "409",
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "sparse": true,
+        "Id": "408",
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "sparse": true,
+        "Id": "405",
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "sparse": true,
+        "Id": "404",
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 5,
+    "totalCount": 5
+  },
+  "time": "2026-01-19T23:13:04.862-08:00"
+}
+2026-01-20 14:13:05.379 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "411",
+        "PrivateNote": "hedera:0.0.7314364-1768812899-775720298:1768812905.039349310"
+      },
+      {
+        "sparse": true,
+        "Id": "410",
+        "PrivateNote": "hedera:0.0.7314364-1768812965-674617321:1768812973.281324000"
+      },
+      {
+        "sparse": true,
+        "Id": "407",
+        "PrivateNote": "hedera:0.0.7314364-1768815391-452727899:1768815397.646105545"
+      },
+      {
+        "sparse": true,
+        "Id": "406",
+        "PrivateNote": "hedera:0.0.7314364-1768815721-351082460:1768815727.457953742"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 4,
+    "totalCount": 4
+  },
+  "time": "2026-01-19T23:13:05.225-08:00"
+}
+2026-01-20 14:13:05.811 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "411",
+        "PrivateNote": "hedera:0.0.7314364-1768812899-775720298:1768812905.039349310"
+      },
+      {
+        "sparse": true,
+        "Id": "410",
+        "PrivateNote": "hedera:0.0.7314364-1768812965-674617321:1768812973.281324000"
+      },
+      {
+        "sparse": true,
+        "Id": "407",
+        "PrivateNote": "hedera:0.0.7314364-1768815391-452727899:1768815397.646105545"
+      },
+      {
+        "sparse": true,
+        "Id": "406",
+        "PrivateNote": "hedera:0.0.7314364-1768815721-351082460:1768815727.457953742"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 4,
+    "totalCount": 4
+  },
+  "time": "2026-01-19T23:13:05.626-08:00"
+}
+2026-01-20 14:13:06.291 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T23:13:06.067-08:00"
+}
+2026-01-20 14:13:06.921 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T23:13:06.595-08:00"
+}
+2026-01-20 14:13:07.426 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T23:13:07.183-08:00"
+}
+2026-01-20 14:13:07.963 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T23:13:07.693-08:00"
+}
+2026-01-20 14:13:08.434 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T23:13:08.216-08:00"
+}
+2026-01-20 14:13:08.932 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T23:13:08.691-08:00"
+}
+2026-01-20 14:13:09.387 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T23:13:09.183-08:00"
+}
+2026-01-20 14:13:09.930 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "419",
+        "PrivateNote": "hedera:0.0.7314364-1766027585-552087534:1766027591.060103000"
+      },
+      {
+        "sparse": true,
+        "Id": "418",
+        "PrivateNote": "hedera:0.0.7314364-1766030174-289582433:1766030181.326155577"
+      },
+      {
+        "sparse": true,
+        "Id": "417",
+        "PrivateNote": "hedera:0.0.7314364-1766030213-525057493:1766030221.323230590"
+      },
+      {
+        "sparse": true,
+        "Id": "416",
+        "PrivateNote": "hedera:0.0.7314364-1766030497-439959319:1766030505.387094619"
+      },
+      {
+        "sparse": true,
+        "Id": "415",
+        "PrivateNote": "hedera:0.0.7314364-1766030578-240378884:1766030582.364667000"
+      },
+      {
+        "sparse": true,
+        "Id": "414",
+        "PrivateNote": "hedera:0.0.7314364-1766030609-197320904:1766030616.463062000"
+      },
+      {
+        "sparse": true,
+        "Id": "413",
+        "PrivateNote": "hedera:0.0.7314364-1766030731-944068452:1766030735.405515000"
+      },
+      {
+        "sparse": true,
+        "Id": "412",
+        "PrivateNote": "hedera:0.0.7314364-1766051013-540302521:1766051017.862591000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  },
+  "time": "2026-01-19T23:13:09.632-08:00"
+}
+2026-01-20 14:13:10.322 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "421",
+        "PrivateNote": "hedera:0.0.7314364-1765965048-616389444:1765965055.914312545"
+      },
+      {
+        "sparse": true,
+        "Id": "420",
+        "PrivateNote": "hedera:0.0.7314364-1765965104-847447479:1765965109.005434934"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T23:13:10.195-08:00"
+}
+2026-01-20 14:13:10.680 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "421",
+        "PrivateNote": "hedera:0.0.7314364-1765965048-616389444:1765965055.914312545"
+      },
+      {
+        "sparse": true,
+        "Id": "420",
+        "PrivateNote": "hedera:0.0.7314364-1765965104-847447479:1765965109.005434934"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T23:13:10.569-08:00"
+}
+2026-01-20 14:13:11.028 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 100,
+        "sparse": true,
+        "Id": "422",
+        "PrivateNote": "hedera:0.0.2158778-1765964901-673268716:1765964912.365292230",
+        "Line": [
+          {
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1,
+    "totalCount": 1
+  },
+  "time": "2026-01-19T23:13:10.937-08:00"
+}
+2026-01-20 14:13:11.381 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "423",
+        "PrivateNote": "hedera:0.0.7314364-1765355365-996728307:1765355370.495038000"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 1,
+    "totalCount": 1
+  },
+  "time": "2026-01-19T23:13:11.288-08:00"
+}
+2026-01-20 14:13:11.744 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Transfer": [
+      {
+        "sparse": true,
+        "Id": "425",
+        "PrivateNote": "hedera:0.0.7314364-1764659040-142583583:1764659044.571825000"
+      },
+      {
+        "sparse": true,
+        "Id": "424",
+        "PrivateNote": "hedera:0.0.7314364-1764670148-357414116:1764670153.002187177"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 2,
+    "totalCount": 2
+  },
+  "time": "2026-01-19T23:13:11.634-08:00"
+}
+2026-01-20 14:13:36.949 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:13:38.201 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:13:39.141 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:13:39.295 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:13:39.444 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:13:51.438 +07:00 info: {"timestamp":"2026-01-20T07:13:51.437Z","level":"info","message":"Token exchange request:","environment":"sandbox","clientId":"AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa","data":{"grant_type":"authorization_code","code_length":50,"redirect_uri":"http://localhost:3000/callback","has_code":true,"realmId":"9341456167431462","state":"testState"}}
+2026-01-20 14:13:52.643 +07:00 info: Create Token response is : {"token_type":"bearer","x_refresh_token_expires_in":8726400,"access_token":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwieC5vcmciOiJIMCJ9..zKHb5oxzFPZc4xO7gy4VHQ.i3VJCNYAYcmO7fIlg1XHp1TQIoE2CuOOhsQ5q0P9FK0g2LbMmN0DXQ_IKauZP_B-qzJTrFAXON2JqD4xyz64mPno9yUs6h10GxkbkWo1xvufgUgePeAoNPWBUVbaafvRlRBtx_M9fgGiYF5Twg3N_zkQ1gdUeU_CWjZIMNVyLY8mZkmbasvb8vfE0Vn1Iuat_XxJb3orsMj5vZW9TdaH-fe6-xr3zpizqDVv0dgLS3V3OLzcL3b0jlG6CTe4kk5m_uocj7y8fwxVnasDds9CTdW3WW-RsndYe01_mLx-o3u3u_gJIekPYB0xcQNYtvMw-hqBDxxqrHCs-sz-DD8EWX9hby0-V7oG9menb4iqnB2c4D6JBYxePkNEx97aC8kwTmDXSxict9lCqvfLQK9c3LHuZCLYB8mXaJBPBQMjDI2Fieq6ylIX5fyuQP8qSqYcWbJpiD-Kw6UfcjTvfsuApy8bNziNOyUncVjgAWQVeZVM8dcjDSiOfloINgaGTD2UbX6m3_BUPSvWRe3F71fL97S-_1wQD6xNyI-6p9nG3BLV9-UDhhnaJvykaip0cTimMrMoxvforWS0MAF9D_oapg.8xYRn-R6gJJL9hHSAgAcYg","refresh_token":"RT1-60-H0-1777619632uueta40fbo6orxw8a2u2","id_token":"eyJraWQiOiJPUElDUFJEMDUxMDIwMjMiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOlsiQUI3Y1FZdE5VSnMwMkhxU1ZhM0h0ZU5JRThxbTMzNHowRWhkYzRaVkhLWGxSN2d5WGEiXSwic3ViIjoiNTVmYmQ3ZTMtNTRkNi0zNDlkLWE3MTAtM2VhZjQ5Y2M3ZmZmIiwicmVhbG1pZCI6IjkzNDE0NTYxNjc0MzE0NjIiLCJhdXRoX3RpbWUiOjE3Njg4OTMyMzEsImlzcyI6Imh0dHBzOi8vb2F1dGgucGxhdGZvcm0uaW50dWl0LmNvbS9vcC92MSIsImV4cCI6MTc2ODg5NjgzMiwiaWF0IjoxNzY4ODkzMjMyfQ.Y2D521vfrS5TNGG21kYIOa5uQr1ErKiqSE6BEGt-DpPmmAQyqVfz5jfqwpwE6f_gHKTrXLXYKagj30DRVSa66u9AnCPL4Hul01HBaGum8d8e0UV77rW9lpjXYprC7tP1XCEcQN6UJ635R9eMQ8U44TYVAJ1uAWTZ4Vu97KGXKNnDBE3Tfg9h5O8_6JcRB3UeQXFL9DcZDTFld98ZLzbcSyszWu85DJPlzzGqjR2i2T0duzsUfWTGbiFPjrtpCnSL2IaCrobHoIMxvZ7-v1CCr1ymPd5NvGBY8ZwU9PTLPsGfoV2robWptq7nsbC-IbKEV4LYka5oOgvERtCp3nZXWw","expires_in":3600}
+2026-01-20 14:13:58.577 +07:00 info: The makeAPICall () response is : {
+  "CompanyInfo": {
+    "CompanyName": "Sandbox Company_US_1",
+    "LegalName": "Sandbox Company_US_1",
+    "CompanyAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "CustomerCommunicationAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "LegalAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "CustomerCommunicationEmailAddr": {
+      "Address": "pathorn.teng@gmail.com"
+    },
+    "PrimaryPhone": {},
+    "CompanyStartDate": "2026-01-18",
+    "FiscalYearStartMonth": "January",
+    "Country": "US",
+    "Email": {
+      "Address": "pathorn.teng@gmail.com"
+    },
+    "WebAddr": {},
+    "SupportedLanguages": "en",
+    "NameValue": [
+      {
+        "Name": "NeoEnabled",
+        "Value": "true"
+      },
+      {
+        "Name": "NonTracking",
+        "Value": "false"
+      },
+      {
+        "Name": "IsQbdtMigrated",
+        "Value": "false"
+      },
+      {
+        "Name": "CompanyType",
+        "Value": "Other"
+      },
+      {
+        "Name": "SubscriptionStatus",
+        "Value": "SUBSCRIBED"
+      },
+      {
+        "Name": "OfferingSku",
+        "Value": "QuickBooks Online Plus"
+      },
+      {
+        "Name": "PayrollFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "AccountantFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "QBOIndustryType",
+        "Value": "Landscaping Services"
+      },
+      {
+        "Name": "ItemCategoriesFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "AssignedTime",
+        "Value": "2026-01-18T22:28:56-08:00"
+      }
+    ],
+    "domain": "QBO",
+    "sparse": false,
+    "Id": "1",
+    "SyncToken": "8",
+    "MetaData": {
+      "CreateTime": "2026-01-18T21:28:56-08:00",
+      "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+    }
+  },
+  "time": "2026-01-19T23:13:58.514-08:00"
+}
+2026-01-20 14:14:00.454 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Account": [
+      {
+        "Name": "Billable Expense Income",
+        "SubAccount": false,
+        "FullyQualifiedName": "Billable Expense Income",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "ServiceFeeIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "267",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:06:17-08:00",
+          "LastUpdatedTime": "2026-01-19T06:06:17-08:00"
+        }
+      },
+      {
+        "Name": "External Hedera Outflow",
+        "SubAccount": false,
+        "FullyQualifiedName": "External Hedera Outflow",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 171.36,
+        "CurrentBalanceWithSubAccounts": 171.36,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040013",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:01-08:00",
+          "LastUpdatedTime": "2026-01-19T19:43:50-08:00"
+        }
+      },
+      {
+        "Name": "Hedera Clearing",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera Clearing",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "OtherPrimaryIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040012",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:00-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:00-08:00"
+        }
+      },
+      {
+        "Name": "Hedera 0.0.6856591",
+        "SubAccount": false,
+        "FullyQualifiedName": "Hedera 0.0.6856591",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Bank",
+        "AccountSubType": "CashOnHand",
+        "CurrentBalance": 132.64,
+        "CurrentBalanceWithSubAccounts": 132.64,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "1150040011",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:59-08:00",
+          "LastUpdatedTime": "2026-01-19T21:03:22-08:00"
+        }
+      },
+      {
+        "Name": "Uncategorized Asset",
+        "SubAccount": false,
+        "FullyQualifiedName": "Uncategorized Asset",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Other Current Asset",
+        "AccountSubType": "OtherCurrentAssets",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "266",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:41-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:41-08:00"
+        }
+      },
+      {
+        "Name": "Uncategorized Expense",
+        "SubAccount": false,
+        "FullyQualifiedName": "Uncategorized Expense",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "OtherMiscellaneousServiceCost",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "265",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:41-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:41-08:00"
+        }
+      },
+      {
+        "Name": "Uncategorized Income",
+        "SubAccount": false,
+        "FullyQualifiedName": "Uncategorized Income",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "ServiceFeeIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "264",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:41-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:41-08:00"
+        }
+      },
+      {
+        "Name": "Disposal Fees",
+        "SubAccount": false,
+        "FullyQualifiedName": "Disposal Fees",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "OtherMiscellaneousServiceCost",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "261",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Insurance - Liability",
+        "SubAccount": false,
+        "FullyQualifiedName": "Insurance - Liability",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "Insurance",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "259",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Interest Earned",
+        "SubAccount": false,
+        "FullyQualifiedName": "Interest Earned",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Other Income",
+        "AccountSubType": "InterestEarned",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "256",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Other Portfolio Income",
+        "SubAccount": false,
+        "FullyQualifiedName": "Other Portfolio Income",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Other Income",
+        "AccountSubType": "OtherMiscellaneousIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "257",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Penalties & Settlements",
+        "SubAccount": false,
+        "FullyQualifiedName": "Penalties & Settlements",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Other Expense",
+        "AccountSubType": "PenaltiesSettlements",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "258",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Repair & Maintenance",
+        "SubAccount": false,
+        "FullyQualifiedName": "Repair & Maintenance",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "RepairMaintenance",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "249",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Retained Earnings",
+        "SubAccount": false,
+        "FullyQualifiedName": "Retained Earnings",
+        "Active": true,
+        "Classification": "Equity",
+        "AccountType": "Equity",
+        "AccountSubType": "RetainedEarnings",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "263",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Services",
+        "SubAccount": false,
+        "FullyQualifiedName": "Services",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "ServiceFeeIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "262",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Stationery & Printing",
+        "SubAccount": false,
+        "FullyQualifiedName": "Stationery & Printing",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "OfficeGeneralAdministrativeExpenses",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "250",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Supplies",
+        "SubAccount": false,
+        "FullyQualifiedName": "Supplies",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "SuppliesMaterials",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "251",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Taxes & Licenses",
+        "SubAccount": false,
+        "FullyQualifiedName": "Taxes & Licenses",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "TaxesPaid",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "252",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Tools",
+        "SubAccount": false,
+        "FullyQualifiedName": "Tools",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "SuppliesMaterials",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "260",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Travel",
+        "SubAccount": false,
+        "FullyQualifiedName": "Travel",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "Travel",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "253",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Travel Meals",
+        "SubAccount": false,
+        "FullyQualifiedName": "Travel Meals",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "TravelMeals",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "254",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Utilities",
+        "SubAccount": false,
+        "FullyQualifiedName": "Utilities",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "Utilities",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "255",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:27-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:27-08:00"
+        }
+      },
+      {
+        "Name": "Advertising",
+        "SubAccount": false,
+        "FullyQualifiedName": "Advertising",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "AdvertisingPromotional",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "238",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Bank Charges",
+        "SubAccount": false,
+        "FullyQualifiedName": "Bank Charges",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "BankCharges",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "239",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Commissions & fees",
+        "SubAccount": false,
+        "FullyQualifiedName": "Commissions & fees",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "OtherMiscellaneousServiceCost",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "240",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Discounts",
+        "SubAccount": false,
+        "FullyQualifiedName": "Discounts",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "DiscountsRefundsGiven",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "234",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Dues & Subscriptions",
+        "SubAccount": false,
+        "FullyQualifiedName": "Dues & Subscriptions",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "DuesSubscriptions",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "241",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Gross Receipts",
+        "SubAccount": false,
+        "FullyQualifiedName": "Gross Receipts",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "SalesOfProductIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "235",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Insurance",
+        "SubAccount": false,
+        "FullyQualifiedName": "Insurance",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "Insurance",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "242",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Legal & Professional Fees",
+        "SubAccount": false,
+        "FullyQualifiedName": "Legal & Professional Fees",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "LegalProfessionalFees",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "243",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Meals and Entertainment",
+        "SubAccount": false,
+        "FullyQualifiedName": "Meals and Entertainment",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "EntertainmentMeals",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "244",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Miscellaneous",
+        "SubAccount": false,
+        "FullyQualifiedName": "Miscellaneous",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Other Expense",
+        "AccountSubType": "OtherMiscellaneousExpense",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "245",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Office Expenses",
+        "SubAccount": false,
+        "FullyQualifiedName": "Office Expenses",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "OfficeGeneralAdministrativeExpenses",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "246",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Prepaid Expenses",
+        "SubAccount": false,
+        "FullyQualifiedName": "Prepaid Expenses",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Other Current Asset",
+        "AccountSubType": "PrepaidExpenses",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "232",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Promotional",
+        "SubAccount": false,
+        "FullyQualifiedName": "Promotional",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "AdvertisingPromotional",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "247",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Refunds-Allowances",
+        "SubAccount": false,
+        "FullyQualifiedName": "Refunds-Allowances",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "DiscountsRefundsGiven",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "236",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Rent or Lease",
+        "SubAccount": false,
+        "FullyQualifiedName": "Rent or Lease",
+        "Active": true,
+        "Classification": "Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "RentOrLeaseOfBuildings",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "248",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Sales",
+        "SubAccount": false,
+        "FullyQualifiedName": "Sales",
+        "Active": true,
+        "Classification": "Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "SalesOfProductIncome",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "237",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      },
+      {
+        "Name": "Undeposited Funds",
+        "SubAccount": false,
+        "FullyQualifiedName": "Undeposited Funds",
+        "Active": true,
+        "Classification": "Asset",
+        "AccountType": "Other Current Asset",
+        "AccountSubType": "UndepositedFunds",
+        "CurrentBalance": 0,
+        "CurrentBalanceWithSubAccounts": 0,
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "233",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:02:26-08:00",
+          "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+        }
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 39
+  },
+  "time": "2026-01-19T23:14:00.418-08:00"
+}
+2026-01-20 14:14:03.401 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 22,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "431",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T21:03:22-08:00",
+          "LastUpdatedTime": "2026-01-19T21:03:22-08:00"
+        },
+        "TxnDate": "2026-01-20",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768885380-675279432:1768885392.983378000",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 22,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "428",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:04:42-08:00",
+          "LastUpdatedTime": "2026-01-19T06:04:42-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 55,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 100,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "422",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:18-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:18-08:00"
+        },
+        "TxnDate": "2025-12-17",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1765964901-673268716:1765964912.365292230",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 100,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "409",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:06-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:06-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 4,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "408",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:06-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:06-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 34,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "405",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:03-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:03-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 77,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "404",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:02-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:02-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 12,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 7,
+    "totalCount": 7
+  },
+  "time": "2026-01-19T23:14:03.270-08:00"
+}
+2026-01-20 14:14:10.590 +07:00 info: The makeAPICall () response is : {
+  "QueryResponse": {
+    "Deposit": [
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 22,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "431",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T21:03:22-08:00",
+          "LastUpdatedTime": "2026-01-19T21:03:22-08:00"
+        },
+        "TxnDate": "2026-01-20",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768885380-675279432:1768885392.983378000",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 22,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 55,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "428",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:04:42-08:00",
+          "LastUpdatedTime": "2026-01-19T06:04:42-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768831463-458924513:1768831473.696778000",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 55,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 100,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "422",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:18-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:18-08:00"
+        },
+        "TxnDate": "2025-12-17",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1765964901-673268716:1765964912.365292230",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 100,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 4,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "409",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:06-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:06-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768813545-100827420:1768813555.367645000",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 4,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 34,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "408",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:06-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:06-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768815300-174913932:1768815314.045741597",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 34,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 77,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "405",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:03-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:03-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768819030-581325685:1768819039.314351000",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 77,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      },
+      {
+        "DepositToAccountRef": {
+          "value": "1150040011",
+          "name": "Hedera 0.0.6856591"
+        },
+        "TotalAmt": 12,
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "404",
+        "SyncToken": "0",
+        "MetaData": {
+          "CreateTime": "2026-01-19T06:03:02-08:00",
+          "LastUpdatedTime": "2026-01-19T06:03:02-08:00"
+        },
+        "TxnDate": "2026-01-19",
+        "CurrencyRef": {
+          "value": "USD",
+          "name": "United States Dollar"
+        },
+        "PrivateNote": "hedera:0.0.2158778-1768829402-712245733:1768829416.036978500",
+        "Line": [
+          {
+            "Id": "1",
+            "LineNum": 1,
+            "Amount": 12,
+            "DetailType": "DepositLineDetail",
+            "DepositLineDetail": {
+              "AccountRef": {
+                "value": "1150040012",
+                "name": "Hedera Clearing"
+              }
+            },
+            "CustomExtensions": []
+          }
+        ]
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 7,
+    "totalCount": 7
+  },
+  "time": "2026-01-19T23:14:10.485-08:00"
+}
+2026-01-20 14:22:58.756 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:23:04.089 +07:00 info: The makeAPICall () response is : {
+  "CompanyInfo": {
+    "CompanyName": "Sandbox Company_US_1",
+    "LegalName": "Sandbox Company_US_1",
+    "CompanyAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "CustomerCommunicationAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "LegalAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "CustomerCommunicationEmailAddr": {
+      "Address": "pathorn.teng@gmail.com"
+    },
+    "PrimaryPhone": {},
+    "CompanyStartDate": "2026-01-18",
+    "FiscalYearStartMonth": "January",
+    "Country": "US",
+    "Email": {
+      "Address": "pathorn.teng@gmail.com"
+    },
+    "WebAddr": {},
+    "SupportedLanguages": "en",
+    "NameValue": [
+      {
+        "Name": "NeoEnabled",
+        "Value": "true"
+      },
+      {
+        "Name": "NonTracking",
+        "Value": "false"
+      },
+      {
+        "Name": "IsQbdtMigrated",
+        "Value": "false"
+      },
+      {
+        "Name": "CompanyType",
+        "Value": "Other"
+      },
+      {
+        "Name": "SubscriptionStatus",
+        "Value": "SUBSCRIBED"
+      },
+      {
+        "Name": "OfferingSku",
+        "Value": "QuickBooks Online Plus"
+      },
+      {
+        "Name": "PayrollFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "AccountantFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "QBOIndustryType",
+        "Value": "Landscaping Services"
+      },
+      {
+        "Name": "ItemCategoriesFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "AssignedTime",
+        "Value": "2026-01-18T22:28:56-08:00"
+      }
+    ],
+    "domain": "QBO",
+    "sparse": false,
+    "Id": "1",
+    "SyncToken": "8",
+    "MetaData": {
+      "CreateTime": "2026-01-18T21:28:56-08:00",
+      "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+    }
+  },
+  "time": "2026-01-19T23:23:04.049-08:00"
+}
+2026-01-20 14:24:04.988 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:24:12.086 +07:00 info: {"timestamp":"2026-01-20T07:24:12.086Z","level":"info","message":"Token exchange request:","environment":"sandbox","clientId":"AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa","data":{"grant_type":"authorization_code","code_length":50,"redirect_uri":"http://localhost:3000/callback","has_code":true,"realmId":"9341456167431462","state":"testState"}}
+2026-01-20 14:24:13.328 +07:00 info: Create Token response is : {"x_refresh_token_expires_in":8726400,"id_token":"eyJraWQiOiJPUElDUFJEMDUxMDIwMjMiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOlsiQUI3Y1FZdE5VSnMwMkhxU1ZhM0h0ZU5JRThxbTMzNHowRWhkYzRaVkhLWGxSN2d5WGEiXSwic3ViIjoiNTVmYmQ3ZTMtNTRkNi0zNDlkLWE3MTAtM2VhZjQ5Y2M3ZmZmIiwicmVhbG1pZCI6IjkzNDE0NTYxNjc0MzE0NjIiLCJhdXRoX3RpbWUiOjE3Njg4OTM4NTEsImlzcyI6Imh0dHBzOi8vb2F1dGgucGxhdGZvcm0uaW50dWl0LmNvbS9vcC92MSIsImV4cCI6MTc2ODg5NzQ1MywiaWF0IjoxNzY4ODkzODUzfQ.kKeTM02ur52jJySTLZ_-hcExAy5fYoPSD7d2hUk8kGWCb53Z_caJ6BwocR4jGnU82IENyaIxQCGE5HynLlDla9pkR43uvvOzpA9M-IUVj5kbxRKRrcWhlc8r390420ju85_w_s5h9rUf4Ow9pe-L6dsEasOvAjGt7-edYqZ4DFYfEXx0W-zT3yFQyjKAJzoMufIY_bdmxGAKn4xojyN9L-Ix3969gXln4RgSZT3ObvarRfJLPu-v4rK_dTHhzXmfmNwnIOhC7t0tDUCfEJi4m_I1C2DGELmOewbHFhS-C0CjwRoOaNQ5XPRjwIpRDxoL5t4iyevdW1Vr5WNuek0bKA","refresh_token":"RT1-30-H0-1777620253u3jx1q4stl4j7yrn75zd","access_token":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwieC5vcmciOiJIMCJ9..w5zGdb8IfwA9jRcm19ONkg.15_MzglVlJd0aXTQSPqNzvCrwP3d4JLS92yTgDYah6so0s8TgoR84_XZmf0PfgSwz8PYmpjFP_2RR56koBpSZ8VZg0WjLW-tIdidERQOt5sNsFZkNK68YtUsMLv3jzaZhQylhMxUqwh7V5iOJrWvEX3RUKm__jujPnZcHI2Wyld4e27gYsQ2YbfgMonGdCcCHdy44t0jFmpZqsChVxFq-lGwScnYLQF58ufZ0fXGt0RQE6z3mKSRTZO0uUuwOHdb8JiQHtC9-JdZbWIid4YpgYTMBRQhgX9OGQynC-Qa758bFciHwgl4qsJd3suWS8lJtpXbJAxOrxAu6_cou31z5hPphgnoPXje1d-syLEChcFdDQupJeW44TgQzKZ4Sb94b-JRKUfpmp_ijhoAOJXPQZKx1y3i8EHb_u2ISDim3W25dkkxo_mPlZAyeSmDEMukAl0Ouw-rNgJ0fVqADpWwjDXzaCJV0XV7-1Mkkg75tYVZM94_ha88z102bRCZbcVsXd-rNJP_rlpHbEmXLsMyZ33zgJbWFdJYVt3TKBRwGYnDMmQjFvDprY4ftd86p5byCi0jyaRkARbQAXb1m0L8aA.vRoH9tso-p4A7oocHaC6IA","token_type":"bearer","expires_in":3600}
+2026-01-20 14:24:14.465 +07:00 info: {"timestamp":"2026-01-20T07:24:14.465Z","level":"info","message":"Token exchange request:","environment":"sandbox","clientId":"AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa","data":{"grant_type":"authorization_code","code_length":50,"redirect_uri":"http://localhost:3000/callback","has_code":true,"realmId":"9341456167431462","state":"testState"}}
+2026-01-20 14:24:14.851 +07:00 error: Create Token () threw an exception : Error: invalid_grant
+2026-01-20 14:24:16.130 +07:00 info: {"timestamp":"2026-01-20T07:24:16.130Z","level":"info","message":"Token exchange request:","environment":"sandbox","clientId":"AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa","data":{"grant_type":"authorization_code","code_length":50,"redirect_uri":"http://localhost:3000/callback","has_code":true,"realmId":"9341456167431462","state":"testState"}}
+2026-01-20 14:24:16.409 +07:00 error: Create Token () threw an exception : Error: invalid_grant
+2026-01-20 14:24:18.672 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:24:21.570 +07:00 info: The makeAPICall () response is : {
+  "warnings": null,
+  "intuitObject": null,
+  "fault": {
+    "error": [
+      {
+        "message": "message=AuthenticationFailed; errorCode=003200; statusCode=401",
+        "detail": "Token revoked",
+        "code": "3200",
+        "element": null
+      }
+    ],
+    "type": "AUTHENTICATION"
+  },
+  "report": null,
+  "queryResponse": null,
+  "batchItemResponse": [],
+  "attachableResponse": [],
+  "syncErrorResponse": null,
+  "requestId": null,
+  "time": 1768893861588,
+  "status": null,
+  "cdcresponse": []
+}
+2026-01-20 14:24:27.144 +07:00 info: {"timestamp":"2026-01-20T07:24:27.144Z","level":"info","message":"Token exchange request:","environment":"sandbox","clientId":"AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa","data":{"grant_type":"authorization_code","code_length":50,"redirect_uri":"http://localhost:3000/callback","has_code":true,"realmId":"9341456167431462","state":"testState"}}
+2026-01-20 14:24:28.283 +07:00 info: Create Token response is : {"expires_in":3600,"x_refresh_token_expires_in":8726400,"access_token":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwieC5vcmciOiJIMCJ9..txD4z34aNWx9r46A4A8JNQ.0qgN73a9uFmJVqHO7VjVmzzAqEB4J2EwMlw_x8iXHtTYjk9i8reaXhIy9fWMljV6GOx8i9qzJgzJnrdqXHUR6EXaTrvyb32AkvN9WaHE3EalTCu0w5ex74s6byDaNgci_CebtzReDnc7AfLMS8bxBPmoUVLwU6M8pcgW6a7jyC7h1OCJMXCGf28_-U1gFaSxZAOAO_xZBgX4HiU6cXGNSJpbKRcRebkIHAlDMXjso2ws4lqLDjU385rm2QrDfZw013WcO8CKkFpDYWOo2VJb1T6-hvW6-824jFC0FvKX5g59xNZGgACoilFy3wRk0jDWSSoTiJfiqWMIU3feO5iSiKnfT4gIYZObeLVvL7kcWW0Ie2vfxyyc72WvL6h7fJyOxopyFcIzDpSUT_eTN5Qg9xTl2sdnuRoK41RNd0gK99KbdTWNF_0mI_-2EKZ5bfOsEYY3Yh0xNkM5LKmqXfKnSS9f7tCNbef5Pmch9stLgijroB0RDqAbRXpJU5PEojib1TMGqy2wPG9eVcNvAYmpJDCZLhCCkJFu1ItvvlWPLvoKZU6T4zoC__FHJvYVS8ckw6dV7YFx0-S6eyrTir1wnQ.ZBWHhSAHH32mZWZZ1XCwJg","refresh_token":"RT1-44-H0-1777620268b9n6wmeq8p7r3ggf5m0k","id_token":"eyJraWQiOiJPUElDUFJEMDUxMDIwMjMiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOlsiQUI3Y1FZdE5VSnMwMkhxU1ZhM0h0ZU5JRThxbTMzNHowRWhkYzRaVkhLWGxSN2d5WGEiXSwic3ViIjoiNTVmYmQ3ZTMtNTRkNi0zNDlkLWE3MTAtM2VhZjQ5Y2M3ZmZmIiwicmVhbG1pZCI6IjkzNDE0NTYxNjc0MzE0NjIiLCJhdXRoX3RpbWUiOjE3Njg4OTM4NjYsImlzcyI6Imh0dHBzOi8vb2F1dGgucGxhdGZvcm0uaW50dWl0LmNvbS9vcC92MSIsImV4cCI6MTc2ODg5NzQ2OCwiaWF0IjoxNzY4ODkzODY4fQ.CdzSKK7FUMOddnouXKnycNLnND-R3c00_VRQa1FZ6U820qGol1nQ3Xum8dkdOGbdg95ZJfmLW1xBbfCIQ9z_ttjqDrRKbooEucKJEj0QitsSoeiPS6ADYGBljw9H2CCNpbzrDuG33XQ1xUANPriA3-aprl0HT6kq69z23WjKEwMcOD07JD5viBJc3FWjatQlwEknubYt6QCWYfAaaVO4HfWFW3kxT6JTTy-4Tq0KIK6pU17nSVwGP2-N1-JjjC25Blz51DIsW1vpHLFXwo-2fKxLOvxketDHSCgbtx9jCLmPLGyyIY1AvIgG7YFSIA5aOpqg-eMeuuZqVolRBGeEdA","token_type":"bearer"}
+2026-01-20 14:24:31.954 +07:00 info: The makeAPICall () response is : {
+  "CompanyInfo": {
+    "CompanyName": "Sandbox Company_US_1",
+    "LegalName": "Sandbox Company_US_1",
+    "CompanyAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "CustomerCommunicationAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "LegalAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "CustomerCommunicationEmailAddr": {
+      "Address": "pathorn.teng@gmail.com"
+    },
+    "PrimaryPhone": {},
+    "CompanyStartDate": "2026-01-18",
+    "FiscalYearStartMonth": "January",
+    "Country": "US",
+    "Email": {
+      "Address": "pathorn.teng@gmail.com"
+    },
+    "WebAddr": {},
+    "SupportedLanguages": "en",
+    "NameValue": [
+      {
+        "Name": "NeoEnabled",
+        "Value": "true"
+      },
+      {
+        "Name": "NonTracking",
+        "Value": "false"
+      },
+      {
+        "Name": "IsQbdtMigrated",
+        "Value": "false"
+      },
+      {
+        "Name": "CompanyType",
+        "Value": "Other"
+      },
+      {
+        "Name": "SubscriptionStatus",
+        "Value": "SUBSCRIBED"
+      },
+      {
+        "Name": "OfferingSku",
+        "Value": "QuickBooks Online Plus"
+      },
+      {
+        "Name": "PayrollFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "AccountantFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "QBOIndustryType",
+        "Value": "Landscaping Services"
+      },
+      {
+        "Name": "ItemCategoriesFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "AssignedTime",
+        "Value": "2026-01-18T22:28:56-08:00"
+      }
+    ],
+    "domain": "QBO",
+    "sparse": false,
+    "Id": "1",
+    "SyncToken": "8",
+    "MetaData": {
+      "CreateTime": "2026-01-18T21:28:56-08:00",
+      "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+    }
+  },
+  "time": "2026-01-19T23:24:31.967-08:00"
+}
+2026-01-20 14:24:39.918 +07:00 info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB7cQYtNUJs02HqSVa3HteNIE8qm334z0Ehdc4ZVHKXlR7gyXa&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2026-01-20 14:24:42.163 +07:00 info: The makeAPICall () response is : {
+  "CompanyInfo": {
+    "CompanyName": "Sandbox Company_US_1",
+    "LegalName": "Sandbox Company_US_1",
+    "CompanyAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "CustomerCommunicationAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "LegalAddr": {
+      "Id": "1",
+      "Line1": "123 Sierra Way",
+      "City": "San Pablo",
+      "CountrySubDivisionCode": "CA",
+      "PostalCode": "87999"
+    },
+    "CustomerCommunicationEmailAddr": {
+      "Address": "pathorn.teng@gmail.com"
+    },
+    "PrimaryPhone": {},
+    "CompanyStartDate": "2026-01-18",
+    "FiscalYearStartMonth": "January",
+    "Country": "US",
+    "Email": {
+      "Address": "pathorn.teng@gmail.com"
+    },
+    "WebAddr": {},
+    "SupportedLanguages": "en",
+    "NameValue": [
+      {
+        "Name": "NeoEnabled",
+        "Value": "true"
+      },
+      {
+        "Name": "NonTracking",
+        "Value": "false"
+      },
+      {
+        "Name": "IsQbdtMigrated",
+        "Value": "false"
+      },
+      {
+        "Name": "CompanyType",
+        "Value": "Other"
+      },
+      {
+        "Name": "SubscriptionStatus",
+        "Value": "SUBSCRIBED"
+      },
+      {
+        "Name": "OfferingSku",
+        "Value": "QuickBooks Online Plus"
+      },
+      {
+        "Name": "PayrollFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "AccountantFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "QBOIndustryType",
+        "Value": "Landscaping Services"
+      },
+      {
+        "Name": "ItemCategoriesFeature",
+        "Value": "false"
+      },
+      {
+        "Name": "AssignedTime",
+        "Value": "2026-01-18T22:28:56-08:00"
+      }
+    ],
+    "domain": "QBO",
+    "sparse": false,
+    "Id": "1",
+    "SyncToken": "8",
+    "MetaData": {
+      "CreateTime": "2026-01-18T21:28:56-08:00",
+      "LastUpdatedTime": "2026-01-19T06:02:26-08:00"
+    }
+  },
+  "time": "2026-01-19T23:24:42.175-08:00"
+}
