@@ -480,6 +480,11 @@ function makeIdempotencyKey(tx) {
     return `hedera:${tx.transaction_id || ""}:${tx.consensus_timestamp || ""}`;
 }
 
+app.get("/events", async (req, res) => {
+    console.log("Received event:", req.body);
+    res.status(200).send("OK");
+});
+
 app.get("/syncHederaToQbo", async (req, res) => {
     try {
         const companyRealmId = getCompanyRealmIdOrThrow();
